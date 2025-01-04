@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5;url=https://discord.gg/zeus-system">
+    <title>Verificado</title>
+    <style>
+        /* Reset e estilo global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0a0a0a;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        /* Fundo animado com partículas */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 255, 136, 0.15), transparent 70%);
+            z-index: 0;
+            animation: backgroundPulse 8s infinite ease-in-out;
+        }
+
+        @keyframes backgroundPulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+
+        /* Container principal */
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(18, 18, 18, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.4);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Ícone animado */
+        .icon {
+            margin: 0 auto 30px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .icon svg {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke: #00ff88;
+            stroke-width: 4;
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            animation: drawIcon 1.5s ease-out forwards;
+        }
+
+        @keyframes drawIcon {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        /* Texto estilizado */
+        h1 {
+            font-size: 30px;
+            color: #00ff88;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #b3b3b3;
+            margin-bottom: 30px;
+        }
+
+        /* Botão estilizado */
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 40px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(135deg, #00ff88, #009966);
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 255, 136, 0.7);
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer span {
+            color: #00ff88;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Ícone animado -->
+        <div class="icon">
+            <svg viewBox="0 0 100 100">
+                <path d="M10 50 L40 80 L90 20" />
+            </svg>
+        </div>
+        <h1>Verificação Completa</h1>
+        <p>Esta página será fechada automaticamente em alguns segundos.</p>
+        <a href="https://discord.gg/zeus-system" target="_blank">Voltar ao Discord</a>
+        <footer>
+            <p>Desenvolvido por <span>ZEUS </span></p>
+            <p>&copy; 2025 Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
